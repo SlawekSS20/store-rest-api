@@ -31,7 +31,7 @@ class Store(Resource):
         try:
             store.save_to_db()
         except:
-            return {"massage": "An error occured inserting item."}, 500
+            return {"massage": "An error occured inserting store."}, 500
 
         return store.json(), 201
 
@@ -40,7 +40,7 @@ class Store(Resource):
         store = StoreModel.find_by_name(name)
         if name:
             store.delete_from_db()
-        return {'message': 'Item deleted.'}
+        return {'message': 'Store deleted.'}
 
 
 class StoreList(Resource):
