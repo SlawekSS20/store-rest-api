@@ -38,7 +38,7 @@ class Store(Resource):
     @jwt_required()
     def delete(self, name):
         store = StoreModel.find_by_name(name)
-        if name:
+        if store:
             store.delete_from_db()
         return {'message': 'Store deleted.'}
 
