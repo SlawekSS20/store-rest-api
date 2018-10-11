@@ -7,7 +7,10 @@ pip install Flask
 python app.py
 ```
 
-## Desription
+## Description
+
+Building new feature.
+Branch 
 
 ## Implementation
 
